@@ -1,4 +1,4 @@
-// Email Service
+
 export async function fetchEmails(filters: {
   account_id?: string
   category?: string
@@ -19,7 +19,6 @@ export async function fetchEmails(filters: {
   }
 }
 
-// AI Service - Generate suggested reply
 export async function generateSuggestedReply(emailId: string) {
   try {
     const response = await fetch("/api/suggested-reply", {
@@ -35,7 +34,7 @@ export async function generateSuggestedReply(emailId: string) {
   }
 }
 
-// Fetch accounts
+
 export async function fetchAccounts() {
   try {
     const response = await fetch("/api/accounts")
