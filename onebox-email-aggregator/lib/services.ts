@@ -1,9 +1,8 @@
 
 export async function fetchEmails(filters: {
-  account_id?: string
-  category?: string
-  folder?: string
-  search?: string
+  account_id: "kumarrohith34908@gmail.com" 
+  folder: "inbox"
+  search: "meeting"
 }) {
   try {
     const params = new URLSearchParams()
