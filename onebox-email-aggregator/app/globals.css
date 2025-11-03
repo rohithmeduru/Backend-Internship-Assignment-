@@ -90,7 +90,7 @@
 
   --radius: 0.5rem;
 
-  /* optional: --font-sans, --font-serif, --font-mono if they are applied in the layout.tsx */
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
