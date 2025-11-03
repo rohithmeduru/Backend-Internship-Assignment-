@@ -53,7 +53,7 @@ export default function EmailDetail({ email, onClose }: EmailDetailProps) {
 
   return (
     <div className="flex-1 flex flex-col bg-background overflow-hidden">
-      {/* Header */}
+     
       <div className="border-b border-border p-6 flex items-start justify-between bg-muted/20">
         <div className="flex-1">
           <h2 className="text-2xl font-bold mb-3 text-foreground text-balance">{email.subject}</h2>
@@ -79,7 +79,7 @@ export default function EmailDetail({ email, onClose }: EmailDetailProps) {
         )}
       </div>
 
-      {/* Content */}
+      
       <div className="flex-1 overflow-y-auto p-6">
         <div className="prose prose-invert max-w-none">
           {email.html_body ? (
@@ -90,7 +90,7 @@ export default function EmailDetail({ email, onClose }: EmailDetailProps) {
         </div>
       </div>
 
-      {/* Actions */}
+     
       <div className="border-t border-border p-6 bg-muted/20 flex gap-2 flex-wrap">
         <Button
           onClick={handleGenerateReply}
@@ -114,7 +114,7 @@ export default function EmailDetail({ email, onClose }: EmailDetailProps) {
         </Button>
       </div>
 
-      {/* Reply Form */}
+     
       {showReplyForm && (
         <div className="border-t border-border p-6 bg-muted/30 max-h-96 overflow-y-auto">
           <div className="flex items-center justify-between mb-3">
