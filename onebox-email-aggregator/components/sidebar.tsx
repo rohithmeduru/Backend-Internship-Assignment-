@@ -65,7 +65,7 @@ export default function Sidebar({ onFilterChange }: SidebarProps) {
 
   return (
     <div className="w-64 bg-muted/30 border-r border-border flex flex-col">
-      {/* Header */}
+      
       <div className="p-6 border-b border-border">
         <div className="flex items-center gap-2 mb-6">
           <div className="bg-primary p-2 rounded-lg">
@@ -82,9 +82,9 @@ export default function Sidebar({ onFilterChange }: SidebarProps) {
         </Button>
       </div>
 
-      {/* Content */}
+      
       <div className="flex-1 overflow-y-auto p-4 space-y-6">
-        {/* Accounts */}
+        
         {accounts.length > 0 && (
           <div>
             <h3 className="text-xs font-semibold text-muted uppercase tracking-wider mb-3">Accounts</h3>
@@ -105,7 +105,7 @@ export default function Sidebar({ onFilterChange }: SidebarProps) {
           </div>
         )}
 
-        {/* Folders */}
+      
         <div>
           <h3 className="text-xs font-semibold text-muted uppercase tracking-wider mb-3">Folders</h3>
           <div className="space-y-1">
@@ -123,7 +123,7 @@ export default function Sidebar({ onFilterChange }: SidebarProps) {
           </div>
         </div>
 
-        {/* Categories */}
+        
         <Collapsible defaultOpen>
           <CollapsibleTrigger className="flex items-center gap-2 text-xs font-semibold text-muted uppercase tracking-wider hover:text-foreground transition">
             Categories
@@ -144,7 +144,7 @@ export default function Sidebar({ onFilterChange }: SidebarProps) {
         </Collapsible>
       </div>
 
-      {/* Footer */}
+    
       <div className="p-4 border-t border-border">
         <Button
           variant="ghost"
